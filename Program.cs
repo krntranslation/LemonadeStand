@@ -10,6 +10,9 @@ namespace Lemonade
     {
         static void Main(string[] args)
         {
+
+            Game game = new Game();
+            game.StartGame();            
             Weather weather = new Weather();
             weather.WhatsTheWeather();
         }

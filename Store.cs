@@ -8,5 +8,19 @@ namespace Lemonade
 {
     class Store
     {
+
+        double lemonBag;
+        double sugarBag;
+        double iceBag;
+        
+        public Store()
+        {
+            lemonBag = 3.50;
+            sugarBag = 1.50;
+            iceBag = 2.00;
+            
+
+        }
     }
+    
 }

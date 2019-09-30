@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lemonade
 {
-    class Day
+    class Inventory
     {
-        public double days;
+        double amountOfLemons;
+        double amountOfSugar;
+        double amountOfIce;
     }
 }

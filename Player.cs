@@ -8,5 +8,12 @@ namespace Lemonade
 {
     class Player
     {
+        string name;
+        
+
+        public Player()
+        {
+          
+        }
     }
 }

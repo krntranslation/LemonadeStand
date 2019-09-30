@@ -31,7 +31,7 @@ namespace Lemonade
             var random = new Random();
             var list = new List<string>() { "Temp-89 degrees,\ncloudy", "Temp-66 degrees, \nsunny", "Temp-99 degrees, \nraining", "Temp-60 degrees, \ncloudy", "Temp-90 degrees, \nsunny", "Temp-75 degrees, \nraining", "Temp-87 degrees, \nsunny" };
             int index = random.Next(list.Count);
-            Console.WriteLine(list[index]);
+            Console.WriteLine("Todays Weather is"+" " + list[index]);
             Console.ReadLine();
 
         }

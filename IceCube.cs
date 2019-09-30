@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lemonade
 {
-    class Day
+    class IceCube
     {
-        public double days;
     }
 }
