@@ -8,6 +8,7 @@ namespace Lemonade
 {
     class Day
     {
-        public double days;
+        public Weather weather;
+        public List<Customer> customer;
     }
 }

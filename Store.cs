@@ -8,7 +8,7 @@ namespace Lemonade
 {
     class Store
     {
-
+        public Player player;
         double lemonBag;
         double sugarBag;
         double iceBag;

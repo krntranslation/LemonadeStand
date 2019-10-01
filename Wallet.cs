@@ -10,5 +10,11 @@ namespace Lemonade
     {
         double moneyInWallet;
 
+        
+        
+            public Wallet()
+        {
+                moneyInWallet = 20.00;
+        }
     }
 }

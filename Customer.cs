@@ -8,7 +8,16 @@ namespace Lemonade
 {
     class Customer
     {
-        double numberOfCustomer;
+        private List<string> names;
+        public string name;
+        public double numberOfCustomer;
 
+        public Customer()
+        {
+            numberOfCustomer = 100;
+            
+            //depending on weather, adjust for sunny and cloudy and raining, sunny = 100%, cloudy 80%, raining 50%
+
+        }
     }
 }

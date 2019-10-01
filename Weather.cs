@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lemonade
 {
-    class Weather
+    public class Weather
     {   //Member Variables
-        string temperature;
+        public string condition;
+        public double temperature;
+        private List<string> weatherConditions;
+        public string predictedForcast;
+        
+
+        
+        string conditions;
         string cloudy;
         string sunny;
         string raining;
@@ -16,44 +23,73 @@ namespace Lemonade
         //Constructor
         public Weather()
         {
-            temperature = null;
+            temperature = 0;
             cloudy = null;
             sunny = null;
             raining = null;
             todaysWeather = null;
+            conditions = null;
 
 
-            List<string> weatherList = new List<string>() { "Temp-89 degrees,\n cloudy", "Temp-66 degrees, \n sunny", "Temp-99 degrees, \n raining", "Temp-60 degrees, \n cloudy", "Temp-90 degrees, \n sunny", "Temp-75 degrees, \n raining", "Temp-87 degrees, \n sunny" };
         }
         //Member Methods
         public void WhatsTheWeather()
         {
-            var random = new Random();
-            var list = new List<string>() { "Temp-89 degrees,\ncloudy", "Temp-66 degrees, \nsunny", "Temp-99 degrees, \nraining", "Temp-60 degrees, \ncloudy", "Temp-90 degrees, \nsunny", "Temp-75 degrees, \nraining", "Temp-87 degrees, \nsunny" };
-            int index = random.Next(list.Count);
-            Console.WriteLine("Todays Weather is"+" " + list[index]);
+            //var random = new Random();
+            //var list = new List<string>() { "Temp-89 degrees,\ncloudy", "Temp-66 degrees, \nsunny", "Temp-99 degrees, \nraining", "Temp-60 degrees, \ncloudy", "Temp-90 degrees, \nsunny", "Temp-75 degrees, \nraining", "Temp-87 degrees, \nsunny" };
+            //int index = random.Next(list.Count);
+            //Console.WriteLine("Todays Weather is" + " " + list[index]);
+            //Console.ReadLine();
+
+            //List<string> conditions = new List<string>() { "sunny", "raining", "cloudy" };
+
+        }
+        public void RandomTemperature(int min, int max)
+        {
+  
+            Random random = new Random();
+            temperature = random.Next(65, 105);
+            Console.WriteLine("Todays Temperature is" + " " + temperature);
             Console.ReadLine();
 
         }
-       
+        
+                
+            
+             
+            
+
+
+
+            //random generate the weather included both conditions and temperature
+
+
+
+
+
+
+            //make a list of weather temp/conditions/
+
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

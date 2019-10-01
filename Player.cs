@@ -8,9 +8,16 @@ namespace Lemonade
 {
     class Player
     {
-        string name;
-        
+        public string name;
+        public Inventory inventory;
+        public Wallet wallet;
+        public Recipe recipe;
+        public Pitcher pitcher;
+        public double businessProfits;
 
+        
+        
+        
         public Player()
         {
           

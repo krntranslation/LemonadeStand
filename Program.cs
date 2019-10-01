@@ -11,10 +11,14 @@ namespace Lemonade
         static void Main(string[] args)
         {
 
-            Game game = new Game();
-            game.StartGame();            
-            Weather weather = new Weather();
-            weather.WhatsTheWeather();
+            //Game game = new Game();
+            //game.StartGame();
+            //game.WhatsTheDay();
+            //Weather weather = new Weather();
+            //weather.WhatsTheWeather();
+            Weather temperature = new Weather();
+            temperature.RandomTemperature(65, 105);
+          
         }
     }
 }

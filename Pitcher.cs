@@ -8,5 +8,6 @@ namespace Lemonade
 {
     class Pitcher
     {
+        public int cupsLeftInPitcher;
     }
 }
