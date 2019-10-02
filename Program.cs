@@ -10,15 +10,17 @@ namespace Lemonade
     {
         static void Main(string[] args)
         {
-
+            Store store = new Store();
+            store.StoreItemsMenu();
             //Game game = new Game();
             //game.StartGame();
-            //game.WhatsTheDay();
+            //Day day = new Day();
+            //day.WhichDayIsIt();
             //Weather weather = new Weather();
             //weather.WhatsTheWeather();
-            Weather temperature = new Weather();
-            temperature.RandomTemperature(65, 105);
-          
+            //Weather temperature = new Weather();
+            //temperature.RandomTemperature(65, 105);
+    
         }
     }
 }

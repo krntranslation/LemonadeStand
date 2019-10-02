@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lemonade
 {
-    class Wallet
+    public class Wallet
     {
-        double moneyInWallet;
+        private double moneyInWallet = 30.00;
 
-        
-        
-            public Wallet()
+        public double MoneyInWallet
         {
-                moneyInWallet = 20.00;
+            set
+            {
+                moneyInWallet = value;
+            }
         }
     }
 }

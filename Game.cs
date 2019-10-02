@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lemonade
 {
-    class Game : Store
+    public class Game 
     {
         Player player = new Player();
-        public List<string> days = new List<string>() { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
-        int currentDay;
+        //public List<string> days = new List<string>() { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+        //int currentDay;
 
         public Game()
         {
+            //days = null;
+           // currentDay = 0;
            
         }
         public void StartGame()
@@ -22,23 +24,15 @@ namespace Lemonade
             Console.ReadLine();
             Console.WriteLine("Please type in your name");
             player.name = Console.ReadLine();
-            Console.WriteLine("Welcome to the Thunder Dome" + " " + player.name);
-            
-            
+            Console.WriteLine("Welcome" + " " + player.name + " " + "Lets make some money");
+  
 
         }
-        public void WhatsTheDay()
+        public void WhichDayIsIT()
         {
-            for (int i = 0; i <= days.Count; i++)
-            {
-                Console.WriteLine("Today is" + " " + days[i]);
-                Console.ReadLine();
-                break;
-
-            }
 
         }
-       public void HowsTheWeather()
+        public void HowsTheWeather()
         {
 
         }
