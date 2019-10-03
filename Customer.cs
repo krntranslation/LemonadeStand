@@ -9,7 +9,7 @@ namespace Lemonade
     class Customer
     {
         
-        private int numberOfCustomers = 100;
+        private double numberOfCustomers = 100;
 
         //public int NumberOfCustomers()
         //{

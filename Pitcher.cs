@@ -8,6 +8,33 @@ namespace Lemonade
 {
     public class Pitcher
     {
-        public int cupsLeftInPitcher;
+        public int cupsPerPitcher;
+        public int howManyPitchers;
+
+
+        public Pitcher()
+        {
+            cupsPerPitcher = 10;
+            howManyPitchers = 0;
+
+        }
+        public void HowManyCupsInAPitcher()
+        {
+            howManyPitchers = (cupsPerPitcher / 10);
+        }
+    
+    
+    
+    
+    
+    
+    
     }
+
+
+
+
+
+    
+    
 }

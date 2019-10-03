@@ -12,7 +12,7 @@ namespace Lemonade
         public double addedSugar;
         public double addedIce;
         public double pricePerCup;
-        
+      
         
         public Recipe()
         {
