@@ -10,31 +10,25 @@ namespace Lemonade
     {
         public Weather weather;
         public string customers;
-        public string currentDay;
-        public List<string> days = new List<string> { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+        public string DayName;
+        Store store = new Store();
+        
 
-
-        public Day()
+        public Day(string dayName)
         {
-            currentDay = null;
-
+            weather = new Weather();
+            DayName = dayName;
+        
         }
         public void WhichDayIsIt()
         {
-           
 
+        }
+        public void RunDay()
+        {
+            weather.WhatsTheWeather();
+            store.StoreItemsMenu();
         }
     }
 }
-                //int i = 0;
-            //while (i < 7)
-            //{
-            //    i++;
-            //    currentDay = i;
-            //    Console.WriteLine("Today is" + " " + currentDay);
-            //    Console.ReadLine();
-            //    break;
 
-            //}
-
-        

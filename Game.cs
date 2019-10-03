@@ -11,15 +11,16 @@ namespace Lemonade
         Player player = new Player();
         
         public int currentDay;
+        List<Day> days;
 
         public string name;
 
-        public List<Day> days = new List<Day>();
-
+        
+        public List<string> daysName = new List<string> { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
 
         public Game()
         {
-
+            days = new List<Day>();
             currentDay = 0;
             name = null;
 
@@ -32,14 +33,27 @@ namespace Lemonade
             Console.WriteLine("Please type in your name");
             player.name = Console.ReadLine();
             Console.WriteLine("Welcome" + " " + player.name + " " + "Lets make some money");
-            //WhichDayIsIt();//need to fix wont give each day
-            Weather weather = new Weather(); 
-            weather.WhatsTheWeather();
-                   
-            //Recipe recipe = new Recipe();
-            //Store store = new Store();
-            //store.StoreItemsMenu();
+            CreateDays();
+            RunDays();
+           
+        }
 
+        public void CreateDays()
+        {
+            for (int i = 0; i < 7; i++)
+            {
+                Day day = new Day(daysName[i]);
+                days.Add(day);
+            }
+        }
+        public void RunDays()
+        {
+            for (int i = 0; i < days.Count; i++)
+            {
+                Console.WriteLine("Today is " + daysName[i]);
+                Console.ReadLine();
+                days[i].RunDay();
+            }
         }
 
             
