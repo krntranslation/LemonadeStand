@@ -6,22 +6,25 @@ using System.Threading.Tasks;
 
 namespace Lemonade
 {
-    class Inventory
+    public class Inventory
     {
-        public List<Lemon> lemons;
-        public List<IceCubes> iceCubes;
-        public List<Cup> cup;
-        public List<SugarCubes> sugarCubes;
+        //public List<Lemon>lemons 
+        //public List<IceCube> iceCubes;
+        //public List<Cup> cups;
+        //public List<SugarCube> sugarCubes;
 
         double amountOfLemons;
         double amountOfSugar;
         double amountOfIce;
 
+       
+
+
         public Inventory()
         {
-            amountOfLemons = 1000;
-            amountOfSugar = 1000;
-            amountOfIce = 1000;
+            amountOfLemons = 0;
+            amountOfSugar = 0;
+            amountOfIce = 0;
         }
     }
         

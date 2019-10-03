@@ -26,6 +26,7 @@ namespace Lemonade
 
 
 
+        //public Store(Player playerPassIn)
         public Store()
         {
             lemonBagCost = 3.00;
@@ -41,6 +42,10 @@ namespace Lemonade
             iceTotalCost = 0.00;
             wallet = 30.00;
             walletBalance = 0.00;
+            //player = playerPassIn; // goes with public Store(Player playerPassIn)
+            
+
+            
             
             var cost = new List<double>() {3.00, 2.00, 1.00}; // dont know if i want to use a list for the store or just add put as objects
             var quanity = new List<double>() { 100, 100, 100 };
@@ -48,26 +53,32 @@ namespace Lemonade
         }
         public void StoreItemsMenu()
         {
-            Console.WriteLine("Welcome to the store.\nYou will buy items here \nLemon Bag is 1 the cost is $3.00 and a bag has 30 lemons\nSugar Bag is 2 the cost is $2.00 and has 30 servings\nIce Bag is 3 the cost is $1.00 and has 300 ice cubes\nIf done enter in 4 \nPlease imput the number for the item and then select the how many bags you want");
+            Console.WriteLine("Welcome to the store.\nYou will buy items here \nLemon Bag is 1 the cost is $3.00 and a bag has 30 lemons\nSugar Bag is 2 the cost is $2.00 and has 30 servings\nIce Bag is 3 the cost is $1.00 and has 300 ice cubes\nIf done enter in 4 \nPlease imput the number for the item");
             userInput = double.Parse(Console.ReadLine());                       // if user inputs strings it crashes look into it later
             Console.WriteLine("How Many bags?");
             numberOfBags = double.Parse(Console.ReadLine());
-           
+            if(wallet <= 0)
+            {
+                Console.WriteLine("You dont have enough money");
+                Console.ReadLine();
+            }
             if(userInput == 1)
             {
                 userInput = lemonBagCost;
                 lemonTotalCost = (lemonBagCost * numberOfBags);
-                walletBalance = (wallet - lemonTotalCost);
-                Console.WriteLine("You have" + " " + walletBalance + " " + "left in your wallet");  // need to have balance of wallet be global 
-                Console.ReadLine();
+                wallet = (wallet - lemonTotalCost);
+                lemonBagCount = numberOfBags;
+                Console.WriteLine("You have" + " " + wallet + " " + "left in your wallet");  // need to have balance of wallet be global 
+                //Console.ReadLine();
                 StoreItemsMenu();
             }
             if(userInput == 2)
             {
                 userInput = sugarBagCost;
                 sugarTotalCost = (sugarBagCost * numberOfBags);
-                walletBalance = (wallet - sugarTotalCost);
-                Console.WriteLine("You have" + " " + walletBalance + " " + "dollars left in your wallet");
+                wallet = (wallet - sugarTotalCost);
+                sugarBagCount = numberOfBags;
+                Console.WriteLine("You have" + " " + wallet + " " + "dollars left in your wallet");
                 Console.ReadLine();
                 StoreItemsMenu();
             }
@@ -75,14 +86,15 @@ namespace Lemonade
             {
                 userInput = iceBagCost;
                 iceTotalCost = (iceBagCost * numberOfBags);
-                walletBalance = (wallet - iceTotalCost);
-                Console.WriteLine("You have" + " " + walletBalance + " " + "left in your wallet");
+                wallet = (wallet - iceTotalCost);
+                iceBagCount = numberOfBags;
+                Console.WriteLine("You have" + " " + wallet + " " + "left in your wallet");
                 Console.ReadLine();
                 StoreItemsMenu();
             }
             else if (userInput == 4) 
             {
-                //goes to recipe
+                 
             }
             else
             {

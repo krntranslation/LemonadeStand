@@ -10,7 +10,7 @@ namespace Lemonade
     {   //Member Variables
         public string condition;
         public double temperature;
-        private List<string> weatherConditions;
+        public string weatherConditions;
         public string predictedForcast;
         
 
@@ -20,6 +20,7 @@ namespace Lemonade
         string sunny;
         string raining;
         string todaysWeather;
+        string currentConditions;
         //Constructor
         public Weather()
         {
@@ -30,7 +31,7 @@ namespace Lemonade
             todaysWeather = null;
             conditions = null;
             predictedForcast = null;
-
+            currentConditions = null;
 
         }
         //Member Methods
@@ -38,7 +39,7 @@ namespace Lemonade
         {
             RandomWeather();
             RandomTemperature(65,105);
-            Console.WriteLine("Today's temperature is" + " " + temperature + " " + "Degrees" + " " + "and its going to be" + " " + conditions);
+            Console.WriteLine("Today's temperature is" + " " + temperature + " " + "Degrees" + " " + "and its going to be" + " " + currentConditions);
             Console.ReadLine();
 
 
@@ -55,9 +56,9 @@ namespace Lemonade
         public void RandomWeather()
         {
             Random random = new Random();
-            var list = new List<string>() { "sunny", "raining", "cloudy" };
-            int index = random.Next(list.Count);
-            conditions = list[index];
+            var conditions = new List<string>{ "sunny", "raining", "cloudy" };
+            int index = random.Next(conditions.Count);
+            currentConditions = conditions[index];
 
             //Console.WriteLine("Todday the forcast is" + " " + list[index]);
             //Console.ReadLine();
@@ -69,6 +70,10 @@ namespace Lemonade
             temperature = random.Next(65, 105);
             //Console.WriteLine("Todays Temperature is" + " " + temperature + " " + "Degrees");
            // Console.ReadLine();
+
+        }
+        public void PredictedForcast()
+        {
 
         }
         

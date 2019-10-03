@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lemonade
 {
-    class Player
+    public class Player
     {
         public string name;
         public Inventory inventory;
@@ -20,7 +20,9 @@ namespace Lemonade
         
         public Player()
         {
-          
+            name = null;
+            businessProfits = 0.00;
         }
     }
+  
 }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lemonade
 {
-    class SugarCubes
+    class SugarCube
     {
+        //inventory = Store.lemonBagCount;
     }
 }

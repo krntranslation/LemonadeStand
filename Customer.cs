@@ -8,21 +8,19 @@ namespace Lemonade
 {
     class Customer
     {
-        //private List<string> names;//not sure if im going to give people names
-        //public string name;//        read above
+        
         private int numberOfCustomers = 100;
 
-        //public int NumberOfCustomers
+        //public int NumberOfCustomers()
         //{
-        //    set
-        //    //{
-        //    //    if (Weather.temperature < 70)
-        //    //        Customer.numberOfCustomers - 40;
-        //        numberOfCustomers = value;
-        //    }
-            
-        //    //depending on weather, adjust for sunny and cloudy and raining, sunny = 100%, cloudy 80%, raining 50%
+
+        //    if (Weather.temperature < 70)
+        //        numberOfCustomers - 40;
 
         //}
+
+        //    //depending on weather, adjust for sunny and cloudy and raining, sunny = 100%, cloudy 80%, raining 50%
+
+
     }
 }
