@@ -35,8 +35,7 @@ namespace Lemonade
             //WhichDayIsIt();//need to fix wont give each day
             Weather weather = new Weather(); 
             weather.WhatsTheWeather();
-            //Weather temperature = new Weather();// shouldn't be here
-            //temperature.RandomTemperature(65, 105);           
+                   
             //Recipe recipe = new Recipe();
             //Store store = new Store();
             //store.StoreItemsMenu();

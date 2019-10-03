@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lemonade
 {
-    public class Cup : Item
+    static class UI
     {
+
     }
 }
