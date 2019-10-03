@@ -53,7 +53,7 @@ namespace Lemonade
         public void StoreItemsMenu()
         {
             Console.WriteLine("Welcome to the store.\nYou will buy items here \nLemon Bag = 1\nthe cost is $3.00 and a bag has 30 lemons\nSugar Bag = 2\nthe cost is $2.00 and has 30 servings\nIce Bag = 3\nthe cost is $1.00 and has 300 ice cubes \nCups in a bag = 4\nthe cost is 2.00 and has 100 cups\nIf done enter in 5");
-            (userInput = double.Parse(Console.ReadLine());                      
+            userInput = double.Parse(Console.ReadLine());                      
             Console.WriteLine("How Many bags?");
             numberOfBags = double.Parse(Console.ReadLine());
             if(wallet <= 0)
