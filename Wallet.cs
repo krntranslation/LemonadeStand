@@ -8,21 +8,13 @@ namespace Lemonade
 {
     public class Wallet
     {
-        
-        
-        private double moneyInWallet = 30.00;
 
-        public double MoneyInWallet
+
+        public double moneyInWallet;
+        public Wallet()
         {
-            get
-            {
-                return moneyInWallet;
-            }
-            set
-            {
-                moneyInWallet = value;
-            }
-
+            moneyInWallet = 30.00;
         }
+ 
     }
 }

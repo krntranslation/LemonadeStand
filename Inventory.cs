@@ -12,21 +12,31 @@ namespace Lemonade
         //public List<IceCube> iceCubes;
         //public List<Cup> cups;
         //public List<SugarCube> sugarCubes;
-
+        public Player player;
         double amountOfLemons;
         double amountOfSugar;
         double amountOfIce;
+        double amountOfCups;
 
        
 
 
         public Inventory()
         {
-            amountOfLemons = 0;
-            amountOfSugar = 0;
-            amountOfIce = 0;
+            amountOfLemons += player.store.lemonBagCount;
+            amountOfSugar += player.store.sugarBagCount;
+            amountOfIce += player.store.iceBagCount;
+            amountOfCups += player.store.cupsCount;
+            
         }
+        
+
+    
+    
+    
+    
     }
+
         
  
 }
