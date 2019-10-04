@@ -29,6 +29,7 @@ namespace Lemonade
         double wallet;
         public double walletBalance;
         public Inventory inventory;
+        public int runNotRun;
 
 
 
@@ -47,7 +48,7 @@ namespace Lemonade
             lemonTotalCost = 0.00;
             sugarTotalCost = 0.00;
             iceTotalCost = 0.00;
-            
+            runNotRun = 0;
             wallet = 30.00;
             walletBalance = 0.00;
 
@@ -56,8 +57,7 @@ namespace Lemonade
         {
             Console.WriteLine("Welcome to the store.\nYou will buy items here \nLemon Bag = 1\nthe cost is $3.00 and a bag has 30 lemons\nSugar Bag = 2\nthe cost is $2.00 and has 30 servings\nIce Bag = 3\nthe cost is $1.00 and has 300 ice cubes \nCups in a bag = 4\nthe cost is 2.00 and has 300 cups\nto check what you purchased = 5\nIf done enter 6");
             userInput = double.Parse(Console.ReadLine());                      
-            //Console.WriteLine("How Many bags?");
-            //numberOfBags = double.Parse(Console.ReadLine());
+
             if(wallet <= 0)
             {
                 Console.WriteLine("You dont have enough money");
@@ -71,6 +71,7 @@ namespace Lemonade
                 lemonTotalCost = (lemonBagCost * numberOfBags);
                 wallet = (wallet - lemonTotalCost);
                 lemonBagCount = numberOfBags;
+                //player.inventory.lemons.Add;
                 Console.WriteLine("You have" + " " + wallet + " " + "left in your wallet");   
                 Console.ReadLine();
                 StoreItemsMenu();
@@ -114,19 +115,19 @@ namespace Lemonade
             if(userInput == 5)
             {
                 Console.WriteLine("This is what you purchased,\nyou have " + lemonBagCount + " lemons\nyou have " + sugarBagCount + " sugar\nyou have " + iceBagCount + " ice bags\nand you have " + cupsCount + " cups\nenter 1 to continue shopping or 2 to leave store");
-                Console.ReadLine();
-                if(x = Console.ReadLine)
+                runNotRun = int.Parse(Console.ReadLine());
+                if(runNotRun == 1)
                 {
-                    ///// fix this its runs over and over
+                    StoreItemsMenu();
                 }
-                
-                
-                //StoreItemsMenu();
-
+                if(runNotRun == 2)
+                {
+                    recipe.lemonadeBlend();
+                }
             }
             if (userInput == 6)
             {
-                recipe.lemonadeBlend();
+                player.inventory.MultiplyingLemons();
                 //inventory.MultiplyingLemons();
             }
 

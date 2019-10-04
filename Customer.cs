@@ -102,7 +102,6 @@ namespace Lemonade
             {
                 Console.WriteLine("You sold no lemonade, maybe lower the price.");
                 Console.ReadLine();
-                // return back to recipe
             }
             else
             {

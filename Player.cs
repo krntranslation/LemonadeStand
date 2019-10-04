@@ -32,6 +32,10 @@ namespace Lemonade
 
 
         }
+        public void CheckInventory()
+        {
+            
+        }
         public void DailyReport()
         {
             businessProfits = (wallet.moneyInWallet - sales);  // remember what amount you started with before you purchased products

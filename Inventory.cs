@@ -14,9 +14,9 @@ namespace Lemonade
         public List<SugarCube> sugarCubes;
         public Player player;
         public double amountOfLemons;
-        double amountOfSugar;
-        double amountOfIce;
-        double amountOfCups;
+        public double amountOfSugar;
+        public double amountOfIce;
+        public double amountOfCups;
         
       
         Store store = new Store();
@@ -35,6 +35,9 @@ namespace Lemonade
         public void MultiplyingLemons()
         {
             amountOfLemons = (store.lemonBagCount * 30);
+            amountOfSugar = (store.sugarBagCount * 30);
+            amountOfIce = (store.iceBagCount * 300);
+            amountOfCups = (store.cupsCount * 300);
         }
         
         
