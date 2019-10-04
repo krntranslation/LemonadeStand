@@ -9,6 +9,7 @@ namespace Lemonade
     public class Store
     {
         public Player player;
+        
 
         Recipe recipe = new Recipe();
         double lemonBagCost;
@@ -53,7 +54,7 @@ namespace Lemonade
         }
         public void StoreItemsMenu()
         {
-            Console.WriteLine("Welcome to the store.\nYou will buy items here \nLemon Bag = 1\nthe cost is $3.00 and a bag has 30 lemons\nSugar Bag = 2\nthe cost is $2.00 and has 30 servings\nIce Bag = 3\nthe cost is $1.00 and has 300 ice cubes \nCups in a bag = 4\nthe cost is 2.00 and has 300 cups\nIf done enter in 5");
+            Console.WriteLine("Welcome to the store.\nYou will buy items here \nLemon Bag = 1\nthe cost is $3.00 and a bag has 30 lemons\nSugar Bag = 2\nthe cost is $2.00 and has 30 servings\nIce Bag = 3\nthe cost is $1.00 and has 300 ice cubes \nCups in a bag = 4\nthe cost is 2.00 and has 300 cups\nto check what you purchased = 5\nIf done enter 6");
             userInput = double.Parse(Console.ReadLine());                      
             //Console.WriteLine("How Many bags?");
             //numberOfBags = double.Parse(Console.ReadLine());
@@ -112,20 +113,37 @@ namespace Lemonade
             }
             if(userInput == 5)
             {
-                //recipe.lemonadeBlend();
-                inventory.MultiplyingLemons();
+                Console.WriteLine("This is what you purchased,\nyou have " + lemonBagCount + " lemons\nyou have " + sugarBagCount + " sugar\nyou have " + iceBagCount + " ice bags\nand you have " + cupsCount + " cups\nenter 1 to continue shopping or 2 to leave store");
+                Console.ReadLine();
+                if(x = Console.ReadLine)
+                {
+                    ///// fix this its runs over and over
+                }
+                
+                
+                //StoreItemsMenu();
+
             }
+            if (userInput == 6)
+            {
+                recipe.lemonadeBlend();
+                //inventory.MultiplyingLemons();
+            }
+
             else
             {
 
             }
 
         }
-        public void Banker()
-        {
+        //public void ItemsPurchased()
+        //{
+        //}
+        //public void Banker()
+        //{
             
           
-        }
+        //}
     }
     
 }

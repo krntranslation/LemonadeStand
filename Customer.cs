@@ -80,22 +80,29 @@ namespace Lemonade
             {
                 Random random = new Random();
                 totalCustomersForPrice = random.Next(50, 101); // ammount of customers to buy try this see if it works
+                Console.WriteLine("You sold " + totalCustomersForPrice + " cups of lemonade.");
+                Console.ReadLine();
 
             }
             if (recipe.pricePerCup >= 1.00 && recipe.pricePerCup <= 2.00)
             {
                 Random random = new Random();
                 totalCustomersForPrice = random.Next(30, 40);
+                Console.WriteLine("You sold " + totalCustomersForPrice + " cups of lemonade.");
+                Console.ReadLine();
             }
             if (recipe.pricePerCup > 2.00 && recipe.pricePerCup <= 3.00)
             {
                 Random random = new Random();
                 totalCustomersForPrice = random.Next(4, 30);
+                Console.WriteLine("You sold " + totalCustomersForPrice + " cups of lemonade.");
+                Console.ReadLine();
             }
             else if (recipe.pricePerCup > 3.00)
             {
                 Console.WriteLine("You sold no lemonade, maybe lower the price.");
                 Console.ReadLine();
+                // return back to recipe
             }
             else
             {

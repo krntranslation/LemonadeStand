@@ -20,8 +20,8 @@ namespace Lemonade
         
       
         Store store = new Store();
-        Inventory inventory = new Inventory();
-      
+        //Inventory inventory = new Inventory();
+        
 
 
         public Inventory()
