@@ -8,5 +8,14 @@ namespace Lemonade
 {
     public class Cup : Item
     {
+        double cup;
+
+        
+       // public override void DoWork()
+        //{
+            //Console.WriteLine("fff");
+            //Console.ReadLine();
+        //}
+            
     }
 }

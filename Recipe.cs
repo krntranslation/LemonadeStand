@@ -14,7 +14,7 @@ namespace Lemonade
         public double pricePerCup;
         public double itemSelected;
         public int oneCup;
-         
+        //Inventory inventory = new Inventory();
       
         
         public Recipe()
@@ -29,7 +29,7 @@ namespace Lemonade
         public void lemonadeBlend()
         {
 
-            Console.WriteLine("Please combine lemons, sugar, and ice to make your blend of lemonade\nPlease use 1-3 to type in the ammount of each item you want to add\n1 = Lemons\n2 = Sugar = 2\n3 = ice cubes\n4 = Set price per cup");
+            Console.WriteLine("Please combine lemons, sugar, and ice to make your blend of lemonade\nPlease use 1-3 to type in the ammount of each item you want to add\n1 = Lemons\n2 = Sugar\n3 = ice cubes\n4 = Set price per cup");
             itemSelected = int.Parse(Console.ReadLine());
             if (itemSelected == 1)
             {

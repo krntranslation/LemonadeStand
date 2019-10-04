@@ -20,7 +20,7 @@ namespace Lemonade
         }
         public void HowManyCupsInAPitcher()
         {
-            howManyPitchers = (cupsPerPitcher / 10);
+            howManyPitchers = (cupsPerPitcher / 2);
         }
     
     

@@ -24,7 +24,7 @@ namespace Lemonade
         public Player()
         {
             name = null;
-            //businessProfits = 0.00;
+            businessProfits = 0.00;
             //wallet.moneyInWallet = 0.00;
             //pitcher.howManyPitchers = 0;
             sales = 0;

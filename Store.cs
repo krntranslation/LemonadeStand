@@ -27,6 +27,7 @@ namespace Lemonade
         double cupTotalCost;
         double wallet;
         public double walletBalance;
+        public Inventory inventory;
 
 
 
@@ -45,17 +46,17 @@ namespace Lemonade
             lemonTotalCost = 0.00;
             sugarTotalCost = 0.00;
             iceTotalCost = 0.00;
-            
+            inventory = 0;
             wallet = 30.00;
             walletBalance = 0.00;
 
         }
         public void StoreItemsMenu()
         {
-            Console.WriteLine("Welcome to the store.\nYou will buy items here \nLemon Bag = 1\nthe cost is $3.00 and a bag has 30 lemons\nSugar Bag = 2\nthe cost is $2.00 and has 30 servings\nIce Bag = 3\nthe cost is $1.00 and has 300 ice cubes \nCups in a bag = 4\nthe cost is 2.00 and has 100 cups\nIf done enter in 5");
+            Console.WriteLine("Welcome to the store.\nYou will buy items here \nLemon Bag = 1\nthe cost is $3.00 and a bag has 30 lemons\nSugar Bag = 2\nthe cost is $2.00 and has 30 servings\nIce Bag = 3\nthe cost is $1.00 and has 300 ice cubes \nCups in a bag = 4\nthe cost is 2.00 and has 300 cups\nIf done enter in 5");
             userInput = double.Parse(Console.ReadLine());                      
-            Console.WriteLine("How Many bags?");
-            numberOfBags = double.Parse(Console.ReadLine());
+            //Console.WriteLine("How Many bags?");
+            //numberOfBags = double.Parse(Console.ReadLine());
             if(wallet <= 0)
             {
                 Console.WriteLine("You dont have enough money");
@@ -63,16 +64,20 @@ namespace Lemonade
             }
             if(userInput == 1)
             {
+                Console.WriteLine("How Many bags?");
+                numberOfBags = double.Parse(Console.ReadLine());
                 userInput = lemonBagCost;
                 lemonTotalCost = (lemonBagCost * numberOfBags);
                 wallet = (wallet - lemonTotalCost);
-                lemonBagCount += numberOfBags;
+                lemonBagCount = numberOfBags;
                 Console.WriteLine("You have" + " " + wallet + " " + "left in your wallet");   
                 Console.ReadLine();
                 StoreItemsMenu();
             }
             if(userInput == 2)
             {
+                Console.WriteLine("How Many bags?");
+                numberOfBags = double.Parse(Console.ReadLine());
                 userInput = sugarBagCost;
                 sugarTotalCost = (sugarBagCost * numberOfBags);
                 wallet = (wallet - sugarTotalCost);
@@ -83,6 +88,8 @@ namespace Lemonade
             }
             if (userInput == 3)
             {
+                Console.WriteLine("How Many bags?");
+                numberOfBags = double.Parse(Console.ReadLine());
                 userInput = iceBagCost;
                 iceTotalCost = (iceBagCost * numberOfBags);
                 wallet = (wallet - iceTotalCost);
@@ -93,6 +100,8 @@ namespace Lemonade
             }
             if (userInput == 4) 
             {
+                Console.WriteLine("How Many bags?");
+                numberOfBags = double.Parse(Console.ReadLine());
                 userInput = cupsBagCost;
                 cupTotalCost = (cupsBagCost * numberOfBags);
                 wallet = (wallet - cupTotalCost);
@@ -103,7 +112,8 @@ namespace Lemonade
             }
             if(userInput == 5)
             {
-                recipe.lemonadeBlend();
+                //recipe.lemonadeBlend();
+                inventory.MultiplyingLemons();
             }
             else
             {
