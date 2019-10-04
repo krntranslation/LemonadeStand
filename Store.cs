@@ -46,7 +46,7 @@ namespace Lemonade
             lemonTotalCost = 0.00;
             sugarTotalCost = 0.00;
             iceTotalCost = 0.00;
-            inventory = 0;
+            
             wallet = 30.00;
             walletBalance = 0.00;
 

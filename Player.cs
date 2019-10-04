@@ -16,7 +16,8 @@ namespace Lemonade
         public double businessProfits;
         public Store store;
         public double sales;
-
+        List<double> weeksales;
+        public double totalBusinessProfits;
         
 
 
@@ -24,17 +25,17 @@ namespace Lemonade
         public Player()
         {
             name = null;
-            businessProfits = 0.00;
-            //wallet.moneyInWallet = 0.00;
-            //pitcher.howManyPitchers = 0;
+            businessProfits = 0.00;  
             sales = 0;
+            weeksales = new List<double>();
+            totalBusinessProfits = 0;
 
 
         }
         public void DailyReport()
         {
-            businessProfits = (wallet.moneyInWallet - sales);
-            if (businessProfits < 0.00)
+            businessProfits = (wallet.moneyInWallet - sales);  // remember what amount you started with before you purchased products
+            if (businessProfits <= 0.00)
             {
                 Console.WriteLine("No money left");
                 Console.ReadLine();
@@ -44,7 +45,23 @@ namespace Lemonade
             {
                 Console.WriteLine("You made " + businessProfits + " today");
             }
+            else
+            {
 
+            }
+
+        }
+        public void WeekReport()
+        {
+            Console.WriteLine("You made " + businessProfits + " today");
+            weeksales.Add(businessProfits);
+            
+        }
+        public void TotalReport()
+        {
+            totalBusinessProfits = weeksales.Sum();
+            Console.WriteLine("You made a total of " + totalBusinessProfits);
+            Console.ReadLine();
         }
         
 

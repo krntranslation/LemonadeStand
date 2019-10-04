@@ -66,7 +66,7 @@ namespace Lemonade
             //method for recipe if more/less lemons is added then its too sour, less sales. set a point to where sales are 100% at this 5 and less if less than 5 or greater than 5
             //same for sugar 
             //for ice it depends on the temperature
-            // pricepercup should depend on temperature
+            //pricepercup should depend on temperature
 
 
         
