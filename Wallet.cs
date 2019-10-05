@@ -9,11 +9,13 @@ namespace Lemonade
     public class Wallet
     {
 
-
+        Wallet wallet = new Wallet();
         public double moneyInWallet;
+
         public Wallet()
         {
-            moneyInWallet = 30.00;
+            moneyInWallet =30.00;
+            
         }
  
     }

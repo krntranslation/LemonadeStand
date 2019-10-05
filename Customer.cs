@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace Lemonade
 {
-    class Customer
+    public class Customer
     {
-
-        private double totalCustomersForWeather;
-        private double totalCustomersForRecipe;
-        private double percentageOfShopers;
-        private double totalCustomersForPrice;
-        Weather weather = new Weather();
-        Recipe recipe = new Recipe();
-
+        
+        public double totalCustomersForWeather;
+        public double totalCustomersForRecipe;
+        public double percentageOfShopers;
+        public double totalCustomersForPrice;
+        //Weather weather = new Weather();
+        //Recipe recipe = new Recipe();
+        public Weather weather;
+        public Recipe recipe;
 
 
 
@@ -28,51 +29,51 @@ namespace Lemonade
 
 
         }
-        public void NumberOfCustomers()
-        {
-            if (weather.condition == "sunny" && weather.temperature >= 88)
-            {
-                totalCustomersForWeather = 100;
-            }
-            if (weather.condition == "sunny" && weather.temperature < 88 && weather.temperature >= 70)
-            {
-                totalCustomersForWeather = 80;
-            }
-            if (weather.condition == "sunny" && weather.temperature < 70 && weather.temperature >= 65)
-            {
-                totalCustomersForWeather = 70;
-            }
-            if (weather.condition == "cloudy" && weather.temperature >= 88)
-            {
-                totalCustomersForWeather = 80;
-            }
-            if (weather.condition == "cloudy" && weather.temperature < 88 && weather.temperature >= 70)
-            {
-                totalCustomersForWeather = 70;
-            }
-            if (weather.condition == "cloudy" && weather.temperature < 70 && weather.temperature >= 65)
-            {
-                totalCustomersForWeather = 60;
-            }
-            if (weather.condition == "raining" && weather.temperature >= 88)
-            {
-                totalCustomersForWeather = 70;
-            }
-            if (weather.condition == "raining" && weather.temperature < 88 && weather.temperature >= 70)
-            {
-                totalCustomersForWeather = 60;
-            }
-            if (weather.condition == "raining" && weather.temperature <= 70)
-            {
-                totalCustomersForWeather = 50;
-            }
-            else
-            {
+        //public void NumberOfCustomers()
+        //{
+        //    if (weather.currentConditions == "sunny" && weather.temperature >= 88)
+        //    {
+        //        totalCustomersForWeather = 100;
+        //    }
+        //    if (weather.condition == "sunny" && weather.temperature < 88 && weather.temperature >= 70)
+        //    {
+        //        totalCustomersForWeather = 80;
+        //    }
+        //    if (weather.condition == "sunny" && weather.temperature < 70 && weather.temperature >= 65)
+        //    {
+        //        totalCustomersForWeather = 70;
+        //    }
+        //    if (weather.condition == "cloudy" && weather.temperature >= 88)
+        //    {
+        //        totalCustomersForWeather = 80;
+        //    }
+        //    if (weather.condition == "cloudy" && weather.temperature < 88 && weather.temperature >= 70)
+        //    {
+        //        totalCustomersForWeather = 70;
+        //    }
+        //    if (weather.condition == "cloudy" && weather.temperature < 70 && weather.temperature >= 65)
+        //    {
+        //        totalCustomersForWeather = 60;
+        //    }
+        //    if (weather.condition == "raining" && weather.temperature >= 88)
+        //    {
+        //        totalCustomersForWeather = 70;
+        //    }
+        //    if (weather.condition == "raining" && weather.temperature < 88 && weather.temperature >= 70)
+        //    {
+        //        totalCustomersForWeather = 60;
+        //    }
+        //    if (weather.condition == "raining" && weather.temperature <= 70)
+        //    {
+        //        totalCustomersForWeather = 50;
+        //    }
+        //    else
+        //    {
 
-            }
+        //    }
 
 
-        }
+        //}
 
         public void NumberOfCustomersForPrice(int min, int max)
         {

@@ -9,14 +9,10 @@ namespace Lemonade
     public class Game 
     {
         Player player = new Player();
-
-        
         public int currentDay;
         List<Day> days;
-
+        Store store = new Store();
         public string name;
-
-        
         public List<string> daysName = new List<string> { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
 
         public Game()
@@ -36,8 +32,7 @@ namespace Lemonade
             Console.WriteLine("Welcome" + " " + player.name + " " + "Lets make some money");
             CreateDays();
             RunDays();
-            player.store.StoreItemsMenu();
-           
+            //StoreItemsMenu();
         }
 
         public void CreateDays()
@@ -54,7 +49,9 @@ namespace Lemonade
             {
                 Console.WriteLine("Today is " + daysName[i]);
                 Console.ReadLine();
-                days[i].RunDay();
+                days[i].RunDay(); //I should add all this generated weather into a list for forcasted weather
+                store.StoreItemsMenu();
+
             }
         }
         

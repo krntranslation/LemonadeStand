@@ -26,7 +26,8 @@ namespace Lemonade
 
         public Inventory()
         {
-            amountOfLemons = 0; //+= player.store.lemonBagCount;
+            lemons = new List<Lemon>();
+            //amountOfLemons = 0; //+= player.store.lemonBagCount;
             amountOfSugar = 0; //+= player.store.sugarBagCount;
             amountOfIce = 0;//+= player.store.iceBagCount;
             amountOfCups = 0;//+= player.store.cupsCount;

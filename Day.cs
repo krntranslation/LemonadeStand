@@ -9,11 +9,11 @@ namespace Lemonade
     public class Day
     {
         public Weather weather;
-        public string customers;
         public string DayName;
-        Store store = new Store();
+        //Store store = new Store();
+        //public Customer customer;
+        //Customer customer = new Customer();
         
-
         public Day(string dayName)
         {
             weather = new Weather();
@@ -27,7 +27,8 @@ namespace Lemonade
         public void RunDay()
         {
             weather.WhatsTheWeather();
-            store.StoreItemsMenu();
+            weather.NumberOfCustomers();
+            //player.store.StoreItemsMenu();
         }
     }
 }

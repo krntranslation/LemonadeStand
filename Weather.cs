@@ -10,29 +10,33 @@ namespace Lemonade
     {   //Member Variables
         public string condition;
         public double temperature;
-        public string weatherConditions;
-        //public string predictedForcast;//didnt use yet maybe dont have too
-        
-
-        
+        public string predictedForcast; //didnt use yet maybe dont have too
         string conditions;
         string cloudy;
         string sunny;
         string raining;
         string todaysWeather;
-        string currentConditions;
+        public string currentConditions;
+        private List<string> weatherConditons;
+        public double totalCustomersForWeather;
+
+
+
         //Constructor
         public Weather()
         {
+            weatherConditons = null;
             temperature = 0;
             cloudy = null;
             sunny = null;
             raining = null;
             todaysWeather = null;
             conditions = null;
-            //predictedForcast = null;//didt use yet
+            predictedForcast = null;//didt use yet
             currentConditions = null;
-
+            totalCustomersForWeather = 0;
+            //this.currentConditions = currentConditions;
+            //this.temperature = temperature;
         }
         //Member Methods
         public void WhatsTheWeather() 
@@ -56,8 +60,53 @@ namespace Lemonade
             temperature = random.Next(65, 105);
 
         }
-    
- 
+        public void NumberOfCustomers()
+        {
+            if (currentConditions == "sunny" && temperature >= 88)
+            {
+                totalCustomersForWeather = 100;
+            }
+            if (currentConditions == "sunny" && temperature < 88 && temperature >= 70)
+            {
+                totalCustomersForWeather = 80;
+            }
+            if (currentConditions == "sunny" && temperature < 70 && temperature >= 65)
+            {
+                totalCustomersForWeather = 70;
+            }
+            if (currentConditions == "cloudy" && temperature >= 88)
+            {
+                totalCustomersForWeather = 80;
+            }
+            if (currentConditions == "cloudy" && temperature < 88 && temperature >= 70)
+            {
+                totalCustomersForWeather = 70;
+            }
+            if (currentConditions == "cloudy" && temperature < 70 && temperature >= 65)
+            {
+                totalCustomersForWeather = 60;
+            }
+            if (currentConditions == "raining" && temperature >= 88)
+            {
+                totalCustomersForWeather = 70;
+            }
+            if (currentConditions == "raining" && temperature < 88 && temperature >= 70)
+            {
+                totalCustomersForWeather = 60;
+            }
+            if (currentConditions == "raining" && temperature <= 70)
+            {
+                totalCustomersForWeather = 50;
+            }
+            else
+            {
+
+            }
+
+
+        }
+
+
 
     }
        
