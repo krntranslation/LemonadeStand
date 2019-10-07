@@ -8,15 +8,25 @@ namespace Lemonade
 {
     public class Wallet
     {
+        private double cash;
+        public double Cash
 
-        Wallet wallet = new Wallet();
-        public double moneyInWallet;
+        {
+            get { return this.cash; }    //CashReport();}
+            set{ Cash = cash; }       //SetCash(30.00)
+        }
 
         public Wallet()
         {
-            moneyInWallet =30.00;
-            
+            this.cash = 30.00;
         }
- 
+        //private double CashReport()
+        //{
+        //    return cash;
+        //}
+        //private void SetCash(double cashIn)
+        //{
+        //    cash = cashIn;
+        //}
     }
 }

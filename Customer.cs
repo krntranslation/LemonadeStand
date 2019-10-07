@@ -13,8 +13,6 @@ namespace Lemonade
         public double totalCustomersForRecipe;
         public double percentageOfShopers;
         public double totalCustomersForPrice;
-        //Weather weather = new Weather();
-        //Recipe recipe = new Recipe();
         public Weather weather;
         public Recipe recipe;
 

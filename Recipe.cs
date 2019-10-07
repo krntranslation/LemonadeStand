@@ -8,16 +8,14 @@ namespace Lemonade
 {
     public class Recipe
     {
-        public int addedLemons;
+        public Store store;
+        public double addedLemons;
         public int addedSugar;
         public int addedIce;
         public double pricePerCup;
         public double itemSelected;
         public int oneCup;
-        //Inventory inventory = new Inventory();
-        //Store store = new Store();
-        
-        public Recipe()
+        public Recipe(int addedLemons, int addedSugar, int addedIce, int oneCup, double pricePerCup)
         {
             addedLemons = 0;
             addedSugar = 0;
@@ -28,7 +26,9 @@ namespace Lemonade
         }
         public void lemonadeBlend()
         {
-            Console.WriteLine("You have " );
+            Console.WriteLine(store.runNotRun);
+            Console.ReadLine();
+            Console.WriteLine("You have ");
             Console.WriteLine("Please combine lemons, sugar, and ice to make your blend of lemonade\nPlease use 1-3 to type in the ammount of each item you want to add\n1 = Lemons\n2 = Sugar\n3 = ice cubes\n4 = Set price per cup");
             itemSelected = int.Parse(Console.ReadLine());
             if (itemSelected == 1)
@@ -66,16 +66,12 @@ namespace Lemonade
         }
         public void Mix()
         {
-            oneCup = (addedLemons + addedSugar + addedIce + addedIce);
+            //oneCup = (addedLemons + addedSugar + addedIce + addedIce);
 
-            //determine the contents and how they affect the sales for customer, maybe a probabilty generator
+            
         }
 
-            //method for recipe if more/less lemons is added then its too sour, less sales. set a point to where sales are 100% at this 5 and less if less than 5 or greater than 5
-            //same for sugar 
-            //for ice it depends on the temperature
-            //pricepercup should depend on temperature
-
+            
 
         
     }

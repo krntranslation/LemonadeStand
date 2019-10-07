@@ -8,7 +8,7 @@ namespace Lemonade
 {
     public class Inventory
     {
-        public List<Lemon> lemons;
+        //public List<Lemon> lemons;
         public List<IceCube> iceCubes;
         public List<Cup> cups;
         public List<SugarCube> sugarCubes;
@@ -17,23 +17,23 @@ namespace Lemonade
         public double amountOfSugar;
         public double amountOfIce;
         public double amountOfCups;
-        
-      
         Store store = new Store();
-        //Inventory inventory = new Inventory();
+        public double lemons;
+        
+       
         
 
 
         public Inventory()
         {
-            lemons = new List<Lemon>();
-            //amountOfLemons = 0; //+= player.store.lemonBagCount;
+            lemons = 0;
+            amountOfLemons = 0; //+= player.store.lemonBagCount;
             amountOfSugar = 0; //+= player.store.sugarBagCount;
             amountOfIce = 0;//+= player.store.iceBagCount;
             amountOfCups = 0;//+= player.store.cupsCount;
             
         }
-        public void MultiplyingLemons()
+        public void MultiplyingBags()
         {
             amountOfLemons = (store.lemonBagCount * 30);
             amountOfSugar = (store.sugarBagCount * 30);

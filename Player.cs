@@ -8,18 +8,17 @@ namespace Lemonade
 {
     public class Player
     {
+        //public Wallet wallet;
         public string name;
         public Inventory inventory;
-        
         public Recipe recipe;
         public Pitcher pitcher;
-        public double businessProfits;
         public Store store;
         public double sales;
-        List<double> weeksales;
         public double totalBusinessProfits;
         public double wallet;
-
+        List<double> weeksales;
+        public double businessProfits;
 
 
         public Player()
@@ -30,6 +29,10 @@ namespace Lemonade
             weeksales = new List<double>();
             totalBusinessProfits = 0;
             wallet = 30.00;
+            
+           
+
+            inventory = null;
 
 
         }
@@ -39,7 +42,7 @@ namespace Lemonade
         }
         public void DailyReport()
         {
-            businessProfits = (wallet - sales);  // remember what amount you started with before you purchased products
+            //businessProfits = (wallet - sales);  // remember what amount you started with before you purchased products
             if (businessProfits <= 0.00)
             {
                 Console.WriteLine("No money left");

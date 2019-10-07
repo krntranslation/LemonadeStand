@@ -10,8 +10,7 @@ namespace Lemonade
     {   //Member Variables
         public string condition;
         public double temperature;
-        public string predictedForcast; //didnt use yet maybe dont have too
-        string conditions;
+        public string predictedForcast; //didnt use yet 
         string cloudy;
         string sunny;
         string raining;
@@ -31,12 +30,11 @@ namespace Lemonade
             sunny = null;
             raining = null;
             todaysWeather = null;
-            conditions = null;
-            predictedForcast = null;//didt use yet
+             //conditions = null;
+            predictedForcast = null;//didnt use yet
             currentConditions = null;
             totalCustomersForWeather = 0;
-            //this.currentConditions = currentConditions;
-            //this.temperature = temperature;
+
         }
         //Member Methods
         public void WhatsTheWeather() 
@@ -45,6 +43,8 @@ namespace Lemonade
             RandomTemperature(65,105);
             Console.WriteLine("Today's temperature is" + " " + temperature + " " + "Degrees" + " " + "and its going to be" + " " + currentConditions);
             Console.ReadLine();
+            NumberOfCustomers();
+
 
         }
         public void RandomWeather()
@@ -65,38 +65,57 @@ namespace Lemonade
             if (currentConditions == "sunny" && temperature >= 88)
             {
                 totalCustomersForWeather = 100;
+                Console.WriteLine("Based on the weather only " + totalCustomersForWeather + " customers will be walking by your lemonade stand");
+                Console.ReadLine();
             }
             if (currentConditions == "sunny" && temperature < 88 && temperature >= 70)
             {
                 totalCustomersForWeather = 80;
+                Console.WriteLine("Based on the weather only " + totalCustomersForWeather + " customers will be walking by your lemonade stand");
+                Console.ReadLine();
             }
             if (currentConditions == "sunny" && temperature < 70 && temperature >= 65)
             {
-                totalCustomersForWeather = 70;
+                totalCustomersForWeather = 70; 
+                Console.WriteLine("Based on the weather only " + totalCustomersForWeather + " customers will be walking by your lemonade stand");
+                Console.ReadLine();
             }
             if (currentConditions == "cloudy" && temperature >= 88)
             {
                 totalCustomersForWeather = 80;
+                Console.WriteLine("Based on the weather only " + totalCustomersForWeather + " customers will be walking by your lemonade stand");
+                Console.ReadLine();
             }
             if (currentConditions == "cloudy" && temperature < 88 && temperature >= 70)
             {
                 totalCustomersForWeather = 70;
+                Console.WriteLine("Based on the weather only " + totalCustomersForWeather + " customers will be walking by your lemonade stand");
+                Console.ReadLine();
             }
             if (currentConditions == "cloudy" && temperature < 70 && temperature >= 65)
             {
                 totalCustomersForWeather = 60;
+                Console.WriteLine("Based on the weather only " + totalCustomersForWeather + "  customers will be walking by your lemonade stand");
+                Console.ReadLine();
             }
             if (currentConditions == "raining" && temperature >= 88)
             {
-                totalCustomersForWeather = 70;
+                totalCustomersForWeather = 70; 
+                Console.WriteLine("Based on the weather only " + totalCustomersForWeather + "  customers will be walking by your lemonade stand");
+                Console.ReadLine();
             }
             if (currentConditions == "raining" && temperature < 88 && temperature >= 70)
             {
                 totalCustomersForWeather = 60;
+                Console.WriteLine("Based on the weather only " + totalCustomersForWeather + "  customers will be walking by your lemonade stand");
+                Console.ReadLine();
+
             }
             if (currentConditions == "raining" && temperature <= 70)
             {
                 totalCustomersForWeather = 50;
+                Console.WriteLine("Based on the weather only " + totalCustomersForWeather + " customers will be walking by your lemonade stand");
+                Console.ReadLine();
             }
             else
             {

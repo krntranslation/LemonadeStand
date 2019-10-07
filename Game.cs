@@ -6,23 +6,25 @@ using System.Threading.Tasks;
 
 namespace Lemonade
 {
-    public class Game 
+    public class Game
     {
         Player player = new Player();
-        public int currentDay;
+        
         List<Day> days;
         Store store = new Store();
-        public string name;
         public List<string> daysName = new List<string> { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
-
+        public int currentDay;
+        //public string name;
         public Game()
         {
+            player.name = null;
+            player.wallet = 30.00;
             days = new List<Day>();
             currentDay = 0;
-            name = null;
+            //name = null;
 
         }
-        
+
         public void StartGame()
         {
             Console.WriteLine("Welcome to your Lemonade Stand \nYou have 7 days to play,\nEach day you will buy supplys,\nYou will start with 30.00 dollars, \nThen you will make your own special blend of Lemonade,\nremember to change your price base on the current weather conditions.\nPress enter to start game");
@@ -32,7 +34,7 @@ namespace Lemonade
             Console.WriteLine("Welcome" + " " + player.name + " " + "Lets make some money");
             CreateDays();
             RunDays();
-            //StoreItemsMenu();
+            
         }
 
         public void CreateDays()
@@ -49,14 +51,14 @@ namespace Lemonade
             {
                 Console.WriteLine("Today is " + daysName[i]);
                 Console.ReadLine();
-                days[i].RunDay(); //I should add all this generated weather into a list for forcasted weather
+                days[i].RunDay();
                 store.StoreItemsMenu();
 
             }
         }
-        
 
-            
+
+
 
 
 
