@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lemonade", "Lemonade\Lemonade.csproj", "{2E56087C-5E6A-4A09-9889-FBF844777E4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestLemonadeStand", "UnitTestLemonadeStand\UnitTestLemonadeStand.csproj", "{42F0DA05-71F9-492D-86F1-5E6150B45D1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E56087C-5E6A-4A09-9889-FBF844777E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E56087C-5E6A-4A09-9889-FBF844777E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E56087C-5E6A-4A09-9889-FBF844777E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E56087C-5E6A-4A09-9889-FBF844777E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F0DA05-71F9-492D-86F1-5E6150B45D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F0DA05-71F9-492D-86F1-5E6150B45D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F0DA05-71F9-492D-86F1-5E6150B45D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F0DA05-71F9-492D-86F1-5E6150B45D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57500874-B159-414D-BAD8-6363861D0826}
+	EndGlobalSection
+EndGlobal
